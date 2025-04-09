@@ -1,12 +1,52 @@
-# React + Vite
+# 🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive weather dashboard built with **React.js (Vite)** and **Tailwind CSS**, fetching real-time weather data using the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
+![Weather Dashboard Screenshot](./screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌐 **Live App**: [https://weather-dashboard-alpha-tan.vercel.app](https://weather-dashboard-alpha-tan.vercel.app)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React.js](https://reactjs.org/) (via [Vite](https://vitejs.dev/))
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **API**: [OpenWeatherMap](https://openweathermap.org/)
+
+---
+
+## 📦 Features
+
+- 🔍 Search for current weather by **city name**
+- 🌡️ Displays temperature, humidity, wind, and condition icon
+- 🕐 Shows 5-day forecast (midday snapshots)
+- 💾 Recent search history (last 5 cities)
+- 🌙 Light/Dark theme toggle
+- 🔄 Refresh weather button
+- ⏳ Loader spinner during fetch
+- ❌ User-friendly error handling
+- 🎨 Smooth animations via Framer Motion
+- 📱 Fully responsive for mobile & desktop
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/Chinmoyee123/weather-dashboard.git
+cd weather-dashboard
+
+# Install dependencies
+npm install
+
+# Create your environment variable file
+cp .env.example .env
+# Paste your API key into .env
