@@ -56,7 +56,9 @@ VITE_OPENWEATHER_KEY=your_api_key_here
 # Run the dev server
 npm run dev
 
-## 🔌 API Integration
+---
+
+🔌 API Integration
 
     Current Weather API
     https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
@@ -65,8 +67,11 @@ npm run dev
     https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}&units=metric
 
 Note:
+
     API key is hidden using a .env file with the Vite VITE_ prefix
-    The key is passed via import.meta.env.VITE_OPENWEATHER_KEY
+
+    Key is passed via: import.meta.env.VITE_OPENWEATHER_KEY
+
     Free tier allows 60 API calls/minute
 
 🧪 Development Scripts
@@ -84,9 +89,9 @@ npm run preview
 
     Deployed on: Vercel
 
-    Public URL: https://weather-dashboard-alpha-tan.vercel.app
+    Live URL: https://weather-dashboard-alpha-tan.vercel.app
 
-    Repo: https://github.com/Chinmoyee123/weather-dashboard
+    GitHub Repo: https://github.com/Chinmoyee123/weather-dashboard
 
 📸 Optional Submission Extras
 
@@ -96,7 +101,7 @@ npm run preview
 
     🖼️ Optional Screenshot (screenshot.png)
 
-    📹 Optional Loom Video (for demo)
+    📹 Optional Loom Video Demo
 
 ✨ Author
 
