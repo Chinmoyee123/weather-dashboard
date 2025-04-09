@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
 
-export default function ForecastCard({ forecast, isToday = false }) {
-  // Get the current date for today
-  const today = new Date();
-  const todayDate = today.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-
-  // Parse the date from the forecast data (dt_txt) for future forecasts
+export default function ForecastCard({ forecast }) {
+  // Parse the forecast date (dt_txt) to get the exact date for the forecasted day
   const date = new Date(forecast.dt_txt);
-  const day = date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  const forecastDate = date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+
+  // The icon for each forecast
+  const weatherIcon = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
 
   return (
     <motion.div
@@ -16,10 +15,10 @@ export default function ForecastCard({ forecast, isToday = false }) {
       transition={{ duration: 0.4, delay: 0.1 }}
       className="min-w-[150px] bg-white text-gray-900 dark:bg-gray-800 dark:text-white p-4 rounded shadow text-center"
     >
-      {/* Display Today's Date if isToday is true, otherwise show the forecast's date */}
-      <h3 className="font-semibold">{isToday ? `📍 Kolkata 📅 ${todayDate}` : `📅 ${day}`}</h3>
+      {/* Display the forecast date */}
+      <h3 className="font-semibold">📅 {forecastDate}</h3>
       <img
-        src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`}
+        src={weatherIcon}
         alt="forecast-icon"
         className="mx-auto w-12 h-12"
       />
