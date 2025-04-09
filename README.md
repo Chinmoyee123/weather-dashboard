@@ -47,6 +47,58 @@ cd weather-dashboard
 # Install dependencies
 npm install
 
-# Create your environment variable file
+# Create a .env file
 cp .env.example .env
-# Paste your API key into .env
+
+# Then paste your API key like this:
+VITE_OPENWEATHER_KEY=your_api_key_here
+
+# Run the dev server
+npm run dev
+
+## 🔌 API Integration
+
+    Current Weather API
+    https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+
+    5-Day Forecast API
+    https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}&units=metric
+
+Note:
+    API key is hidden using a .env file with the Vite VITE_ prefix
+    The key is passed via import.meta.env.VITE_OPENWEATHER_KEY
+    Free tier allows 60 API calls/minute
+
+🧪 Development Scripts
+
+# Start dev server
+npm run dev
+
+# Create production build
+npm run build
+
+# Preview production build
+npm run preview
+
+🚀 Deployment
+
+    Deployed on: Vercel
+
+    Public URL: https://weather-dashboard-alpha-tan.vercel.app
+
+    Repo: https://github.com/Chinmoyee123/weather-dashboard
+
+📸 Optional Submission Extras
+
+    ✅ Live Deployed App URL
+
+    ✅ GitHub Repository Link
+
+    🖼️ Optional Screenshot (screenshot.png)
+
+    📹 Optional Loom Video (for demo)
+
+✨ Author
+
+Built with ❤️ by Chinmoyee Ghosh
+📫 GitHub
