@@ -4,6 +4,7 @@ A clean and responsive weather dashboard built with **React.js (Vite)** and **Ta
 
 ![Weather Dashboard Screenshot](./screenshot.png)
 
+
 ---
 
 ## 🚀 Live Demo
