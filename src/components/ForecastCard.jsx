@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
-
-export default function ForecastCard({ forecast }) {
-  // Parse the forecast date (dt_txt) to get the exact date for the forecasted day
+export default function ForecastCard({ forecast }) {  
   const date = new Date(forecast.dt_txt);
   const forecastDate = date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 
-  // The icon for each forecast
   const weatherIcon = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
 
   return (
@@ -15,8 +12,8 @@ export default function ForecastCard({ forecast }) {
       transition={{ duration: 0.4, delay: 0.1 }}
       className="min-w-[150px] bg-white text-gray-900 dark:bg-gray-800 dark:text-white p-4 rounded shadow text-center"
     >
-      {/* Display the forecast date */}
-      <h3 className="font-semibold">📅 {forecastDate}</h3>
+
+      <h3 className="font-semibold">{forecastDate}</h3>
       <img
         src={weatherIcon}
         alt="forecast-icon"
